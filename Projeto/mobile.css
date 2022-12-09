@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.616), rgba(128, 0, 128, 0.603))
+}
+main{
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+main > h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+main > section{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+#mail{
+    background-color: blueviolet;
+    display: inline-block;
+}
+#sen{
+    background-color: blueviolet;
+    text-align: left;
+    display: inline-block;
+}

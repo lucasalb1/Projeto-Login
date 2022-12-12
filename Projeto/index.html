@@ -7,28 +7,35 @@
     <title>Login</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mediaq.css">
 </head>
 <body>
     <main>
         <section>
-        <img src="" alt="">
-        <h1>Login</h1>
-        <p>Seja muito bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-        <form id="mail" action="cadastro.js" method="post" autocomplete="on">
-            <p>
-                <label for="imail"><i class="material-icons">person</i></label>
-                <input type="email" name="mail" id="imail" required placeholder="Seu e-mail" size="25">
-            </p>
-        </form>
-            <form id="sen" action="cadastro.js" method="post" autocomplete="on">
-            <p>
-                <label for="isenha"><i class="material-icons">vpnkey</i></label>
-                <input type="password" name="senha" id="isenha" required placeholder="Sua senha" size="25" min="8">
-            </p>
-        </form>
-        <input id="ent" type="submit" value="Entrar">
-        <input id="esq" type="submit" value="Esqueci minha senha">
-    </section>
+            <div id="img">
+
+            </div>
+            <div id="login">
+
+                <h1>Login</h1>
+
+                <article>
+                    <p>Seja muito bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                </article>
+                <form id="mail" action="cadastro.js" method="post" autocomplete="on">
+                    <p>
+                        <label for="imail"><i class="material-icons">person</i></label>
+                        <input type="email" name="mail" id="imail" autocomplete="email" required placeholder="Seu e-mail" maxlength="30">
+                    </p>
+                    <p>
+                        <label for="isenha"><i class="material-icons">vpn_key</i></label>
+                        <input type="password" name="senha" id="isenha" required placeholder="Sua senha" size="20" minlength="8" autocomplete="current-password" minlegth="8" maxlength="20">
+                    </p>
+                <input id="ent" type="submit" value="Entrar">
+                <input id="esq" type="submit" value="Esqueci minha senha">
+            </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

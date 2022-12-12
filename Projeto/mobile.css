@@ -1,39 +1,52 @@
 @charset "UTF-8";
 
+/* 
+Cores:
+Verde:#49a09d
+Lilás:#5f2c82
+*/
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
-
-
 body{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.616), rgba(128, 0, 128, 0.603))
+    width: 100vw;
+    background-color: rgb(128, 0, 128)
 }
-main{
-    width: 70vw;
-    margin: auto;
+section{
     background-color: white;
+    width: 250px;
+    height: 500px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
-main > h2{
-    text-align: center;
-    margin-bottom: 10px;
-}
-main > section{
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 15px;
+#img{
+    background: url(../Imagens/pexels-bruno-thethe-2747596.jpg) no-repeat;
+    background-position: center center;
+    height: 200px;
 }
 
-#mail{
-    background-color: blueviolet;
-    display: inline-block;
+#login > h1{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
 }
-#sen{
-    background-color: blueviolet;
-    text-align: left;
-    display: inline-block;
+
+#login > article{
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+    line-height: 1em;
+    font-size: .9em;
 }

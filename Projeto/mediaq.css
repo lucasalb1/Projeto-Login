@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* 
+Typical Devices Breakpoint
+
+Pequenas telas: Até 600px;
+Celular: De 600px a 768px
+Tablet: De 768px a 992px
+PC: De 992px a 1200px
+Grandes Telas: Acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body{
+        background-image: linear-gradient(to top, rgb(113, 113, 238), rgb(102, 207, 241), rgb(255, 125, 255),rgb(255, 116, 255));
+    }
+    
+    section{
+        width: 80vw;
+        height: 400px;
+    }
+
+    #img{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #login{
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(to top, rgb(113, 113, 238), rgb(102, 207, 241), rgb(255, 125, 255),rgb(255, 116, 255));
+    }
+    section{
+        width: 800px;
+        height: 400px;
+    }
+    #img{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #login{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #login > h1{
+        font-size: 1.8em;
+    }
+    #login > article{
+        font-size: 1.1em;
+    }
+}

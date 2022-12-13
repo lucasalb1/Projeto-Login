@@ -27,7 +27,7 @@ Grandes Telas: Acima de 1200px
         height: 100%;
     }
 
-    #login{
+    #formulario{
         float: right;
         width: 70%;
         height: 100%;
@@ -49,15 +49,15 @@ Grandes Telas: Acima de 1200px
         height: 100%;
     }
 
-    #login{
+    #formulario{
         float: left;
         width: 50%;
         height: 100%;
     }
-    #login > h1{
+    #formulario > h1{
         font-size: 1.8em;
     }
-    #login > article{
+    #formulario > article{
         font-size: 1.1em;
     }
 }

@@ -39,33 +39,33 @@ section{
     height: 200px;
 }
 
-#login > h1{
+#formulario > h1{
     text-align: center;
     padding: 5px 0px 5px 0px;
 }
 
-#login > article{
+#formulario > article{
     text-align: justify;
     padding: 0px 10px 0px 10px;
     line-height: 1em;
     font-size: .9em;
 }
 
-#campo{
+form .campo{
+    display: block;
     text-align: center;
-    margin: 5px;
+    margin: 5px 0px;
 }
-
-form #imail {
-    width: 82%;
-    height: 35px;
-    background-color: #48b6b285;
+form .campo > input{
+    background-color: #89d1d0;
+    width: 79%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
 }
-
-form #isenha{
-    width: 82%;
-    height: 35px;
-    background-color: #48b6b285;
+form .campo > label{
+    display: none;
 }
 
 #ent{

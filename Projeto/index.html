@@ -11,27 +11,31 @@
 </head>
 <body>
     <main>
-        <section>
-            <div id="img">
+        <section id="login">
 
+            <div id="img">
             </div>
-            <div id="login">
+
+            <div id="formulario">
                 <h1>Login</h1>
                 <article>
                     <p>Seja muito bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 </article>
-                <form id="mail" action="cadastro.js" method="post" autocomplete="on">
-                    <p id="campo">
-                        <label id="per" for="imail"><i class="material-icons">person</i></label>
+
+                <form action="cadastro.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
                         <input type="email" name="mail" id="imail" autocomplete="email" required placeholder="Seu e-mail" maxlength="30">
-                    </p>
-                    <p id="campo">
-                        <label for="isenha"><i class="material-icons">vpn_key</i></label>
+                        <label for="imail">Login</label> 
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
                         <input type="password" name="se0nha" id="isenha" required placeholder="Sua senha" size="20" minlength="8" autocomplete="current-password" minlegth="8" maxlength="20">
-                    </p>
-                <input id="ent" type="submit" value="Entrar">
-                    <a class="esq" href="#">Esqueci minha senha <i class="material-icons">mail</i></a>
-            </form>
+                        <label for="isenha">Senha</label>
+                    </div>
+                        <input id="ent" type="submit" value="Entrar">
+                            <a class="esq" href="#">Esqueci minha senha <i class="material-icons">mail</i></a>
+                </form>
             </div>
         </section>
     </main>
